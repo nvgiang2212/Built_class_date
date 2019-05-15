@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xay dung lop Hinh tron</title>
+</head>
+<body>
+	<script>
+		let circle = function(radius) {
+			this.radius = radius;
+			this.color = "red";
+
+			this.getRadius = function() {
+				return this.radius;
+			}
+			this.getArea = function() {
+				return Math.PI * this.radius * this.radius;
+			}
+		}
+
+		let cirCles = new circle(4);
+		let radius = cirCles.getRadius();
+		let area = cirCles.getArea();
+		console.log("radius" + " " + radius + " area: " + area);
+	</script>
+</body>
+</html>
